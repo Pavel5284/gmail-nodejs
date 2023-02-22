@@ -30,7 +30,7 @@ let smtp_password = process.env.SMTP_PASSWORD
         res.send('Hello World!')
     })
 
-    app.post('/sendMessage', async function (req, res) {
+    app.get('/sendMessage', async function (req, res) {
         let{name, email, subject, message} = req.body
 
 
